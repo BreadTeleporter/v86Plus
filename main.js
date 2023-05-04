@@ -14,7 +14,7 @@ function waitForUrlMatch(matchString, callback) {
 function main(){
   console.log("URL matched!");
 
-  document.body.style.overflow = "hidden"
+//   document.body.style.overflow = "hidden"
   document.body.style.marginBottom = "50px"
   document.getElementById("terminal").style.display = "none"
 
@@ -39,6 +39,7 @@ function main(){
   newInput.value = "Fullscreen";
   newInput.onclick = () => {
     document.getElementById("vga").requestFullscreen()
+    navigator.keyboard.lock()
   };
 
   var vga = document.getElementById("vga")
