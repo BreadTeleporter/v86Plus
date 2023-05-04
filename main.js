@@ -1,3 +1,8 @@
+////////////////////////////////////////
+// v86+ is licensed under GNU GPL 3.0 //
+//     v86+ 1.0 main code file        //
+////////////////////////////////////////
+
 function waitForUrlMatch(matchString, callback) {
   const interval = setInterval(() => {
     if (location.href.includes(matchString)) {
